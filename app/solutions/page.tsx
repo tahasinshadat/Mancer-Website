@@ -1,8 +1,39 @@
+import type { Metadata } from "next"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { SolutionsHero } from "@/components/solutions-hero"
 import { SolutionModule } from "@/components/solution-module"
 import { SolutionsCTA } from "@/components/solutions-cta"
+
+export const metadata: Metadata = {
+  title: "Robotic Inspection, Digital Twin & AI Data Services",
+  description:
+    "Explore Mancer Robotics solutions for autonomous inspection, digital twin modeling, and AI analytics across energy, infrastructure, and industrial assets.",
+  keywords: [
+    "robotic inspection services",
+    "digital twin modeling",
+    "AI data services",
+    "predictive maintenance",
+    "pipeline inspection",
+    "tank inspection",
+    "industrial inspection",
+    "autonomous robots",
+  ],
+  alternates: {
+    canonical: "/solutions",
+  },
+  openGraph: {
+    title: "Robotic Inspection, Digital Twin & AI Data Services",
+    description:
+      "Explore Mancer Robotics solutions for autonomous inspection, digital twin modeling, and AI analytics across energy, infrastructure, and industrial assets.",
+    url: "/solutions",
+  },
+  twitter: {
+    title: "Robotic Inspection, Digital Twin & AI Data Services",
+    description:
+      "Explore Mancer Robotics solutions for autonomous inspection, digital twin modeling, and AI analytics across energy, infrastructure, and industrial assets.",
+  },
+}
 
 const solutions = [
   {
