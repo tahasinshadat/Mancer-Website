@@ -157,10 +157,7 @@ export const metadata: Metadata = {
     images: ["/assets/mancer-logo.png"],
   },
   icons: {
-    icon: [
-      { url: "/assets/mancer-icon.png" },
-      { url: "/assets/mancer-icon.png", sizes: "512x512", type: "image/png" },
-    ],
+    icon: [{ url: "/favicon.ico" }],
     apple: [{ url: "/assets/mancer-icon.png", sizes: "180x180", type: "image/png" }],
   },
   referrer: "origin-when-cross-origin",
