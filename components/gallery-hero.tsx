@@ -13,10 +13,10 @@ export function GalleryHero() {
           className="max-w-3xl"
         >
           <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">Projects</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-balance">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-balance mb-6">
             See our work in action
           </h1>
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed">
             Explore our portfolio of successful deployments across industries—from offshore platforms to manufacturing
             facilities.
           </p>

@@ -1,53 +1,12 @@
 "use client"
 
+import Link from "next/link"
 import { motion } from "framer-motion"
 import { MapPin, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import jobsData from "@/data/jobs.json"
 
-const jobs = [
-  {
-    id: 1,
-    title: "Senior Robotics Engineer",
-    location: "San Francisco, CA",
-    type: "Full-time",
-    description: "Design and develop autonomous robotic systems for industrial inspection applications.",
-  },
-  {
-    id: 2,
-    title: "Machine Learning Engineer",
-    location: "San Francisco, CA",
-    type: "Full-time",
-    description: "Build and deploy ML models for defect detection and predictive maintenance.",
-  },
-  {
-    id: 3,
-    title: "Computer Vision Scientist",
-    location: "Remote",
-    type: "Full-time",
-    description: "Develop advanced vision algorithms for real-time inspection and 3D reconstruction.",
-  },
-  {
-    id: 4,
-    title: "Field Operations Engineer",
-    location: "Houston, TX",
-    type: "Full-time",
-    description: "Deploy and support robotic systems at client sites across the energy sector.",
-  },
-  {
-    id: 5,
-    title: "Product Designer",
-    location: "San Francisco, CA",
-    type: "Full-time",
-    description: "Design intuitive interfaces for our digital twin and analytics platforms.",
-  },
-  {
-    id: 6,
-    title: "Solutions Architect",
-    location: "Remote",
-    type: "Full-time",
-    description: "Work with enterprise clients to design and implement inspection solutions.",
-  },
-]
+const jobs = jobsData.jobs
 
 export function JobListings() {
   return (
@@ -88,10 +47,14 @@ export function JobListings() {
                     {job.location}
                   </div>
                 </div>
-                <Button className="gap-2 shrink-0">
-                  Apply Now
-                  <ArrowRight className="h-4 w-4" />
-                </Button>
+                <Link
+                  href={`/careers/apply?position=${encodeURIComponent(job.title)}&location=${encodeURIComponent(job.location)}&type=${encodeURIComponent(job.type)}`}
+                >
+                  <Button className="gap-2 shrink-0">
+                    Apply Now
+                    <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </Link>
               </div>
             </motion.div>
           ))}
@@ -107,9 +70,11 @@ export function JobListings() {
           <p className="text-muted-foreground mb-4">
             {"Don't see a role that fits? We are always looking for talented people."}
           </p>
-          <Button variant="outline" className="bg-transparent">
-            Send General Application
-          </Button>
+          <Link href="/careers/apply">
+            <Button variant="outline" className="bg-transparent">
+              Send General Application
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>

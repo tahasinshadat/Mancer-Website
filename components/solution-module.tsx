@@ -17,7 +17,7 @@ interface SolutionModuleProps {
 
 export function SolutionModule({ solution }: SolutionModuleProps) {
   return (
-    <section id={solution.id} className="py-20 lg:py-28 border-t border-border">
+    <section id={solution.id} className={`py-20 lg:py-28 ${solution.reversed ? "bg-muted" : "bg-background"}`}>
       <div className="max-w-7xl mx-auto px-6">
         <div
           className={`grid lg:grid-cols-2 gap-12 lg:gap-20 items-center ${solution.reversed ? "direction-rtl" : ""}`}
@@ -32,10 +32,10 @@ export function SolutionModule({ solution }: SolutionModuleProps) {
             <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-3">
               {solution.subtitle}
             </p>
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4">{solution.title}</h2>
-            <p className="text-muted-foreground leading-relaxed mb-8">{solution.description}</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">{solution.title}</h2>
+            <p className="text-muted-foreground leading-relaxed mb-8 text-base md:text-lg">{solution.description}</p>
 
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               {solution.benefits.map((benefit, index) => (
                 <motion.li
                   key={index}
@@ -48,7 +48,7 @@ export function SolutionModule({ solution }: SolutionModuleProps) {
                   <div className="w-5 h-5 rounded-full bg-foreground flex items-center justify-center shrink-0 mt-0.5">
                     <Check className="h-3 w-3 text-primary-foreground" />
                   </div>
-                  <span className="text-sm">{benefit}</span>
+                  <span className="text-sm md:text-base">{benefit}</span>
                 </motion.li>
               ))}
             </ul>

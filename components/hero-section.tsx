@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-black">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -19,23 +19,13 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-white leading-[1.1] tracking-tight text-balance animate-in fade-in slide-in-from-bottom-4 duration-700">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-white leading-[1.05] tracking-tight text-balance animate-in fade-in slide-in-from-bottom-4 duration-700">
           Intelligent Robotics for Critical Infrastructure
         </h1>
 
-        <p className="mt-6 text-2xl md:text-3xl lg:text-4xl font-medium text-white/90 tracking-wide animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
-          <span className="text-white">Inspect.</span>
-          <span className="mx-2 text-white/60">Model.</span>
-          <span className="text-white">Predict.</span>
-        </p>
-
-        <p className="mt-8 text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
-          Autonomous robots capture structural data. AI delivers actionable insights. Your assets last longer.
-        </p>
-
-        <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
+        <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
           <Link href="/contact">
-            <Button size="lg" className="bg-white text-black hover:bg-white/90 font-medium">
+            <Button size="lg" className="bg-white text-black hover:bg-white/90 font-medium px-8">
               Request Demo
             </Button>
           </Link>
@@ -43,7 +33,7 @@ export function HeroSection() {
             <Button
               size="lg"
               variant="outline"
-              className="border-white/40 text-white hover:bg-white/10 bg-transparent font-medium gap-2"
+              className="border-white/40 text-white hover:bg-white/10 bg-transparent font-medium gap-2 px-8"
             >
               Explore Technology
               <ArrowRight className="h-4 w-4" />

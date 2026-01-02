@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { HeroSection } from "@/components/hero-section"
+import { MissionStatementSection } from "@/components/mission-statement-section"
 import { FeaturesSection } from "@/components/features-section"
 import { ValuePropsSection } from "@/components/value-props-section"
 import { CredibilitySection } from "@/components/credibility-section"
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Navigation />
       <main>
         <HeroSection />
+        <MissionStatementSection />
         <FeaturesSection />
         <ValuePropsSection />
         <CredibilitySection />

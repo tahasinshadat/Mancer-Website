@@ -12,10 +12,40 @@ import { ArrowRight, Check } from "lucide-react"
 
 export function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setIsSubmitted(true)
+    setIsSubmitting(true)
+    setError("")
+
+    const formData = new FormData(e.target as HTMLFormElement)
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      company: formData.get("company"),
+      service: formData.get("service"),
+      message: formData.get("message"),
+    }
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form")
+      }
+
+      setIsSubmitted(true)
+    } catch (err) {
+      setError("Failed to send message. Please try emailing us directly at tahasinshadat@gmail.com")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   if (isSubmitted) {
@@ -41,22 +71,22 @@ export function ContactForm() {
         <div className="grid md:grid-cols-2 gap-4">
           <div className="space-y-2">
             <Label htmlFor="name">Name</Label>
-            <Input id="name" placeholder="Your name" required />
+            <Input id="name" name="name" placeholder="Your name" required />
           </div>
           <div className="space-y-2">
             <Label htmlFor="email">Email</Label>
-            <Input id="email" type="email" placeholder="you@company.com" required />
+            <Input id="email" name="email" type="email" placeholder="you@company.com" required />
           </div>
         </div>
 
         <div className="space-y-2">
           <Label htmlFor="company">Company</Label>
-          <Input id="company" placeholder="Your company name" />
+          <Input id="company" name="company" placeholder="Your company name" />
         </div>
 
         <div className="space-y-2">
           <Label htmlFor="service">Service of Interest</Label>
-          <Select>
+          <Select name="service">
             <SelectTrigger>
               <SelectValue placeholder="Select a service" />
             </SelectTrigger>
@@ -72,11 +102,13 @@ export function ContactForm() {
 
         <div className="space-y-2">
           <Label htmlFor="message">Message</Label>
-          <Textarea id="message" placeholder="Tell us about your project or challenge..." rows={5} required />
+          <Textarea id="message" name="message" placeholder="Tell us about your project or challenge..." rows={5} required />
         </div>
 
-        <Button type="submit" size="lg" className="w-full gap-2">
-          Send Message
+        {error && <p className="text-sm text-red-500">{error}</p>}
+
+        <Button type="submit" size="lg" className="w-full gap-2" disabled={isSubmitting}>
+          {isSubmitting ? "Sending..." : "Send Message"}
           <ArrowRight className="h-4 w-4" />
         </Button>
       </form>

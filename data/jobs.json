@@ -1,0 +1,62 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Senior Robotics Engineer",
+      "location": "San Francisco, CA",
+      "type": "Full-time",
+      "description": "Design and develop autonomous robotic systems for industrial inspection applications.",
+      "jobDescription": "We're looking for an experienced Robotics Engineer to join our team and help build the next generation of autonomous inspection robots. You'll work on cutting-edge robotics systems that operate in challenging industrial environments, developing everything from motion planning algorithms to sensor integration and control systems.\n\nYou'll collaborate closely with our AI, hardware, and operations teams to deploy robots that inspect critical infrastructure including bridges, pipelines, and industrial facilities. This role offers the opportunity to work on real-world robotics challenges with significant impact on infrastructure safety and maintenance.",
+      "aboutYou": "• 5+ years of experience in robotics engineering or related field\n• Strong background in robot motion planning, control systems, and sensor integration\n• Experience with ROS (Robot Operating System) and modern robotics frameworks\n• Proficiency in C++ and Python\n• Experience with computer vision and SLAM algorithms\n• Track record of deploying robotic systems in real-world environments\n• Strong problem-solving skills and ability to work in a fast-paced startup environment",
+      "salary": "$150,000 - $200,000"
+    },
+    {
+      "id": 2,
+      "title": "Machine Learning Engineer",
+      "location": "San Francisco, CA",
+      "type": "Full-time",
+      "description": "Build and deploy ML models for defect detection and predictive maintenance.",
+      "jobDescription": "Join our AI team to develop state-of-the-art machine learning models that power our automated inspection and predictive maintenance systems. You'll work on computer vision models for defect detection, time-series analysis for predictive maintenance, and reinforcement learning for autonomous robot navigation.\n\nYour models will process terabytes of inspection data from real-world infrastructure, helping customers predict failures before they occur and optimize maintenance schedules. You'll have the opportunity to work with diverse data types including images, sensor readings, and structured data from industrial environments.",
+      "aboutYou": "• 3+ years of experience in machine learning engineering\n• Strong foundation in deep learning, computer vision, and time-series analysis\n• Experience with PyTorch or TensorFlow\n• Track record of deploying ML models to production\n• Experience with MLOps tools and practices\n• Strong software engineering skills in Python\n• Experience with cloud platforms (AWS, GCP, or Azure)",
+      "salary": "$140,000 - $190,000"
+    },
+    {
+      "id": 3,
+      "title": "Computer Vision Scientist",
+      "location": "Remote",
+      "type": "Full-time",
+      "description": "Develop advanced vision algorithms for real-time inspection and 3D reconstruction.",
+      "jobDescription": "We're seeking a Computer Vision Scientist to push the boundaries of what's possible in automated visual inspection. You'll develop algorithms for real-time defect detection, 3D reconstruction from multi-sensor data, and visual SLAM for robot localization in challenging industrial environments.\n\nThis role combines cutting-edge research with practical deployment. You'll work on problems like detecting microscopic cracks in concrete, 3D mapping of complex industrial facilities, and visual odometry in GPS-denied environments. Your work will directly impact the safety and reliability of critical infrastructure worldwide.",
+      "aboutYou": "• PhD or Master's degree in Computer Vision, Robotics, or related field\n• Strong publication record in top-tier conferences (CVPR, ICCV, ECCV, etc.)\n• Deep expertise in 3D computer vision, SLAM, or structure from motion\n• Experience with classical and deep learning-based vision algorithms\n• Proficiency in C++ and Python\n• Experience with real-time vision systems\n• Ability to bridge research and practical applications"
+    },
+    {
+      "id": 4,
+      "title": "Field Operations Engineer",
+      "location": "Houston, TX",
+      "type": "Full-time",
+      "description": "Deploy and support robotic systems at client sites across the energy sector.",
+      "jobDescription": "As a Field Operations Engineer, you'll be the face of Mancer Robotics to our customers in the energy sector. You'll deploy our robotic inspection systems at oil & gas facilities, power plants, and other critical infrastructure, ensuring successful operations and gathering valuable feedback to improve our products.\n\nThis role combines hands-on robotics work with customer collaboration. You'll troubleshoot technical issues in the field, train customer teams on our systems, and work closely with our engineering team to continuously improve our products based on real-world feedback.",
+      "aboutYou": "• 3+ years of experience in field engineering, robotics deployment, or related role\n• Strong technical background with ability to troubleshoot complex systems\n• Excellent communication and customer-facing skills\n• Willingness to travel up to 50% of the time\n• Experience in the energy industry or industrial environments preferred\n• Ability to work independently and solve problems on-site\n• Safety-conscious mindset and relevant certifications (e.g., OSHA) a plus",
+      "salary": "$100,000 - $140,000"
+    },
+    {
+      "id": 5,
+      "title": "Product Designer",
+      "location": "San Francisco, CA",
+      "type": "Full-time",
+      "description": "Design intuitive interfaces for our digital twin and analytics platforms.",
+      "jobDescription": "We're looking for a Product Designer to shape the user experience of our digital twin platform and analytics tools. You'll design interfaces that help infrastructure operators make sense of complex inspection data, visualize 3D models of their assets, and take action on predictive insights.\n\nYou'll work closely with engineers, customers, and stakeholders to create intuitive experiences for both expert users and non-technical stakeholders. Your designs will help democratize access to advanced robotics and AI technology, making sophisticated inspection and analytics capabilities accessible to a broad range of users.",
+      "aboutYou": "• 4+ years of product design experience, preferably in B2B or technical products\n• Strong portfolio demonstrating expertise in complex data visualization and enterprise UX\n• Proficiency in Figma and modern design tools\n• Experience designing for 3D visualization or geospatial applications a plus\n• Strong understanding of user research and usability testing\n• Ability to balance user needs with technical constraints\n• Experience working in cross-functional teams with engineers and product managers"
+    },
+    {
+      "id": 6,
+      "title": "Solutions Architect",
+      "location": "Remote",
+      "type": "Full-time",
+      "description": "Work with enterprise clients to design and implement inspection solutions.",
+      "jobDescription": "As a Solutions Architect, you'll work directly with our largest enterprise customers to design and implement customized inspection and analytics solutions. You'll combine deep technical knowledge with business acumen to translate customer needs into scalable solutions using our robotics and AI platform.\n\nThis role involves understanding complex infrastructure challenges, designing end-to-end solutions that integrate our technology with customer systems, and working with our engineering team to deliver custom implementations. You'll be a trusted advisor to customers while driving product feedback to improve our platform.",
+      "aboutYou": "• 6+ years of experience in solutions architecture, technical consulting, or customer-facing engineering\n• Strong technical background with understanding of robotics, computer vision, or AI systems\n• Experience with enterprise software integration and API design\n• Excellent communication skills with ability to explain technical concepts to non-technical audiences\n• Track record of managing complex, multi-stakeholder projects\n• Experience in infrastructure, energy, or industrial sectors preferred\n• Willingness to travel to customer sites as needed",
+      "salary": "$130,000 - $170,000"
+    }
+  ]
+}

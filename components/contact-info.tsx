@@ -5,14 +5,14 @@ import { Mail, Phone, MapPin, Linkedin, Twitter, Youtube } from "lucide-react"
 
 const offices = [
   {
-    city: "San Francisco",
-    address: "100 Innovation Way, Suite 400",
-    region: "San Francisco, CA 94107",
+    city: "New York City",
+    address: "Manhattan Office",
+    region: "New York, NY",
   },
   {
-    city: "Houston",
-    address: "2000 Energy Plaza, Floor 15",
-    region: "Houston, TX 77002",
+    city: "Chicago",
+    address: "Chicago Office",
+    region: "Chicago, IL",
   },
 ]
 
@@ -29,22 +29,22 @@ export function ContactInfo() {
         <h2 className="text-2xl font-semibold mb-6">Get in touch</h2>
         <div className="space-y-4">
           <a
-            href="mailto:hello@mancer.io"
+            href="mailto:tahasinshadat@gmail.com"
             className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
           >
             <div className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center">
               <Mail className="h-5 w-5" />
             </div>
-            <span>hello@mancer.io</span>
+            <span>tahasinshadat@gmail.com</span>
           </a>
           <a
-            href="tel:+14155551234"
+            href="tel:+19294065670"
             className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
           >
             <div className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center">
               <Phone className="h-5 w-5" />
             </div>
-            <span>+1 (415) 555-1234</span>
+            <span>+1 (929) 406-5670</span>
           </a>
         </div>
       </div>
