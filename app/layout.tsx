@@ -134,6 +134,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "p08V1xSWbfGlkPWNBTsQ1jRBCXMY5jCyxwCB2JPbo6k",
+  },
   openGraph: {
     type: "website",
     url: "/",
